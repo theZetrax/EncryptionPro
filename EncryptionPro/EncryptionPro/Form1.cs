@@ -16,5 +16,20 @@ namespace EncryptionPro
         {
             InitializeComponent();
         }
+
+        private void openFileDialog_FileOk(object sender, CancelEventArgs e)
+        {
+            Console.WriteLine(openFileDialog.FileName);
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
